@@ -1,0 +1,8 @@
+1-> Normal Parsing like we use script in HTML
+    In this first html parsing will be running but whenever script tag comes it stops html parsing and load the script tag then run the script i.e javascript and then again it completes html parsing
+
+2-> Async 
+    In this Along with HTML parsing script file is downloaded and when it's time to run script then the html parsing stops.
+
+3-> Defer 
+    In this first HTML parsing and loading of script file is done together and after all the HTML file is parsed then only the script tag will be executed.

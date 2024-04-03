@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <div id="root">Not rendered</div>
+    <div id="reactRoot"></div>
+    <!-- Trying to change dom using javascript -->
+    <script>
+      const root = document.getElementById("root");
+      const heading = document.createElement("h1");
+      heading.innerHTML = "DOM manipulation using JS only";
+      root.appendChild(heading);
+    </script>
+    <script>
+      const headingReact = React.createElement(
+        "h6",
+        { id: "heading" },
+        "This is changed from React"
+      );
+      const rootReact = ReactDOM.createRoot(
+        document.getElementById("react")
+      );
+      rootReact.render(headingReact);
+    </script>
+  </body>
+</html>
+<!-- This is react's smalles code because if we see in the browser engine and console log 
+React then we will find different properties and funcitons. Which means React is an object
+-->
