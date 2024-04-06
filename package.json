@@ -1,5 +1,11 @@
 {
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
   "dependencies": {
+    "babel": "^6.23.0",
     "parcel": "^2.12.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
